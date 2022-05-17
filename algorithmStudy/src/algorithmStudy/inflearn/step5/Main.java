@@ -11,7 +11,7 @@ public class Main {
 		Scanner in = new Scanner(System.in);
 		String str = in.nextLine();
 		
-		t.solution(str);
+		System.out.println(t.solution(str));
 	}
 	
 	public void swap(char[] charArr , int lt , int rt) {
@@ -20,7 +20,7 @@ public class Main {
 		charArr[rt] = tmp;
 	}
 
-	private void solution(String str) {
+	private String solution(String str) {
 		char[] chaArr = str.toCharArray();
 		int length = str.length();
 		int lt = 0;
@@ -36,7 +36,6 @@ public class Main {
 				rt --;
 			}
 		}
-		String answer = String.valueOf(chaArr);
-		System.out.println(answer);
+		return (String.valueOf(chaArr));
 	}
 }
